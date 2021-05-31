@@ -76,7 +76,7 @@ span {
     align-items: center;
 }
 
-.navbar > .buttons > button {
+.login {
     margin: 1.2vh 1vw;
     background-color: rgb(26, 115, 232);
     border: none;
@@ -90,6 +90,7 @@ span {
     max-width: 272px;
     height: auto;
     margin: 4vh 0px;
+    grid-area: logo;
 }
 
 .searchbar {
@@ -120,6 +121,9 @@ span {
     visibility: visible;;
 }
 
+.search {
+    grid-area: search;
+}
 
 .search > .buttons {
     display: flex;
@@ -174,3 +178,36 @@ span {
     color: rgba(0, 0, 0, 0.54);
 }
 
+.blue {
+    margin-left: 0.4vw;
+    color: rgb(26, 115, 232);
+}
+
+.small {
+    max-width: 5vw;
+    height: auto;
+    position: relative;
+    right: 1.8vw;
+}
+
+.resultnavbar {
+    padding: 4vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template: "logo search . buttons";
+    grid-template-columns: 1fr 3fr 5fr 2fr;
+    grid-template-rows: 5vh;
+}
+
+.resultnavbar > .buttons {
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+}
+
+.resultnavbar > .buttons > a {
+    margin: 0vh 0.2vw;
+    color:rgba(32,33,36,1);
+} 
